@@ -26,20 +26,24 @@ function App() {
 
   // Tiedot on tallennettava, setTiedot on funktio jolla päivitetään
   // muuttuja "tiedot" ylläpitää listaa kaikista tiedoista
-  const [tiedot, setTiedot] = useState(["testi1", "testi2", "testi3"]);
+  const [tiedot, setTiedot] = useState([{"firstName" : "terve", "lastName" : "sukunimi", "pelinumero" : "2", "joukkue" : "koti"}]);
 
   //Lokkaa on tulevaa dataa bodysta
   const lokkaa = (data) =>{
-    console.log(data);
     const uudet = {...data}       // Ei suoraan uutta, vaan välivaiheen kautta
     setTiedot([...tiedot, uudet]) // Lisätään kaikki vanhat + uusi tieto
+  }
+
+  const deleteTieto = (id) => {
+    //console.log("delete", id)
+    setTiedot(tiedot.filter((tieto) => tieto.firstName+tieto.lastName !== id))
   }
 
   return(
     <div className="App">
       <Header />
       {/* lokkaa tuo tiedot bodysta (lisaaTiedot on lähetettävä funktio). tiedot on lähetettävä array*/}
-      <Body lisaaTiedot={(data) => lokkaa(data)} tiedot={tiedot[tiedot.length-1]}/>
+      <Body lisaaTiedot={(data) => lokkaa(data)} tiedot={tiedot} delTieto={(data) => deleteTieto(data)}/>
     </div>
   );
 

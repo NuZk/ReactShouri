@@ -1,15 +1,15 @@
 ennen peliä ->
-	kokoonpanojen valinta max 20
+	kokoonpanojen valinta max 20 *
 	yleiset tiedot ->
-		sarja
-		paikka
-		pvm -oletus tämä päivä
+		sarja * voi olla muu
+		paikka *
+		pvm -oletus tämä päivä *
 		ottelunumero
-		alku kellonaika
+		alku kellonaika *
 		joukkueen johtaja
 		päävalmentaja
 		linjatuomarit
-		kirjuri
+		kirjuri *
 pelaajat valittu ->
 	maalit ->
 		maalin numero koko pelissä

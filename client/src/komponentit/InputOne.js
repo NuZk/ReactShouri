@@ -1,6 +1,6 @@
 /* Basic Header html structure */
 
-import { useState } from 'react';
+//import { useState } from 'react';
 import { useForm } from "react-hook-form";
 
 function InputOne({lisaaTiedotInput}) {
@@ -15,11 +15,7 @@ function InputOne({lisaaTiedotInput}) {
     <form onSubmit={handleSubmit(onSubmit)}>
       <input {...register("firstName")} placeholder="First name" />
       <input {...register("lastName")} placeholder="Last name" />
-      <select {...register("category")}>
-        <option value="">Select...</option>
-        <option value="A">Category A</option>
-        <option value="B">Category B</option>
-      </select>
+      <input {...register("pelinumero")} placeholder="Pelinumero" />
       <input type="submit" />
     </form>
   );
