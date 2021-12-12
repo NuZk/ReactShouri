@@ -1,0 +1,41 @@
+ennen peliä ->
+	kokoonpanojen valinta max 20
+	yleiset tiedot ->
+		sarja
+		paikka
+		pvm -oletus tämä päivä
+		ottelunumero
+		alku kellonaika
+		joukkueen johtaja
+		päävalmentaja
+		linjatuomarit
+		kirjuri
+pelaajat valittu ->
+	maalit ->
+		maalin numero koko pelissä
+		erikoistilanne? esim. yv, av, rangaistulaukaus, im
+		aika
+		tekijä
+		kaksi syöttäjää
+		(+-)
+	rangaistukset ->
+		pelaajan numero
+		jäähyn pituus
+		syy
+		kumoutunut/siirretty
+		alku ja loppu aika
+pelin jälkeen ->
+	maalit koti ja vieras per erä
+	maalit koti ja vieras yhteensä
+	torjunnat koti ja vieras per erä
+	torjunnat koti ja vierasyhteensä
+	maalivahin vaihot ->
+		joukkue
+		aika
+		numero
+	maalivahtien peliajat
+	aikalisät ->
+		joukkuettain
+		ajat
+	yleisö
+	päättymis kellonaika
